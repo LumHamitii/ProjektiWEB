@@ -253,8 +253,9 @@ body{
     display: flex;
     justify-content: space-between;
 }
-#o1, #o2 {
+#o1 {
     width: 10%;
+    transition: transform .1s;
 }
 .promo{
     display: flex;
@@ -276,9 +277,13 @@ body{
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
- 
+  
 }
 .butoni{
     display: flex;
     justify-content: center;
 }
+
+ .o1:hover {
+    transform: scale(1.1);
+ }
