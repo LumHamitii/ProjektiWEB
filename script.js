@@ -66,7 +66,7 @@
                 nameError.innerHTML = 'Name is required';
                 return false;
             }
-            if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){ // Check if name is written in full 
+            if(!name.match(/^[a-zA-Z]+ [a-zA-Z]+$/)){ // Check if name is written in full 
                 nameError.innerHTML = 'Write full name';
                 return false;
             }
@@ -95,7 +95,7 @@
                 emailError.innerHTML = 'Email required';
                 return false;
             }
-            if(!email.match( /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)){
+            if(!email.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
                 emailError.innerHTML = 'Invalid email';
                 return false;
             }
