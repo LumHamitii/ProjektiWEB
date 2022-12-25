@@ -386,7 +386,7 @@ body{
    
   }
 
-  .footer{
+  .contactF{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -462,7 +462,7 @@ form button{
 }
 .heading1{
     text-align: center;
-   
+
     font-size: 5rem;
     color:var(--black);
 }
@@ -481,3 +481,47 @@ form button{
     color: green;
 }
   
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 80px 300px;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size:14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size:13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size:13px;
+    text-decoration: none;
+    color:#222;
+    margin-bottom: 10px;
+}
+footer .follow i{
+    color:#465b52;
+    padding-right: 4px;
+    cursor:pointer;
+}
+footer .follow i:hover,
+footer a:hover{
+    color: rgb(177, 113, 124);
+}
