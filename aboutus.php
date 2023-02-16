@@ -12,10 +12,10 @@
         <a href="#"> <img src="images/timberland.png" width="150" height="90"></a>   
         <div class="navv">
         <nav class="navbar">
-         <a href="index.html">HOME</a>
-         <a href="products.html">PRODUCTS</a>
-         <a href="aboutus.html"> ABOUT US</a>
-         <a href="contact.html">CONTACT</a>
+            <a href="index.php">HOME</a>
+            <a href="products.php">PRODUCTS</a>
+            <a href="aboutus.php"> ABOUT US</a>
+            <a href="contact.php">CONTACT</a>
         </nav>
         </div>
         <div class="icons">
