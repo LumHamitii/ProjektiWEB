@@ -85,43 +85,7 @@
        
     
 
-  <section class="footer" id="contact">
-            
-    <div class="container2">
-        <form>
-            <h1 class="heading1"><span>Contact us</span></h1>
-          <i class="fas fa-paper-plane"></i>
-    
-          <div class="input-group">
-            <label>Full Name</label>
-            <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
-            <span id="name-error"></span>
-          </div>
-    
-          <div class="input-group">
-            <label>Phone No.</label>
-            <input type="tel" placeholder="123 456 789"id="contact-phone" onkeyup="validatePhone()">
-            <span id="phone-error"></span>
-          </div>
-    
-          <div class="input-group">
-            <label>Email Id</label>
-            <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
-            <span id="email-error"></span>
-          </div>   
-    
-          <div class="input-group">
-            <label>Your Message</label>
-            <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
-            <span id="message-error"></span>
-          </div>
-    
-        <button onclick=" return validateForm()">Submit</button>
-       <span id="submit-error"></span>
-      </form>
-      
-      </div>
-</section>
+  
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <footer>
   <div class="col">
