@@ -525,3 +525,9 @@ footer .follow i:hover,
 footer a:hover{
     color: rgb(177, 113, 124);
 }
+
+
+.kutiaLogin {
+    border: #a84308;
+    background-color: #465b52;
+}
