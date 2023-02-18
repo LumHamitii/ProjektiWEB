@@ -16,6 +16,7 @@
           <a href="index.php">HOME</a>
          <a href="products.php">PRODUCTS</a>
          <a href="aboutus.php"> ABOUT US</a>
+         <a href="findus.php">FIND US</a>
          <a href="contact.php">CONTACT</a>
         </nav>
         </div>
