@@ -8,15 +8,17 @@
  }
  
  
- let loginForm = document.querySelector('.login-form');
+//  let loginForm = document.querySelector('.login-form');
  
- document.querySelector('#login-btn').onclick = () =>{
-     loginForm.classList.toggle('active');
-     searchForm.classList.remove('active');
-    //  shoppingCart.classList.remove('active');
-     navbar.classList.remove('active');
- }
+//  document.querySelector('#login-btn').onclick = () =>{
+//      loginForm.classList.toggle('active');
+//      searchForm.classList.remove('active');
+//     //  shoppingCart.classList.remove('active');
+//      navbar.classList.remove('active');
+//  }
  
+
+  //slider
  var imageno =1;
         displayimg(imageno);
 
