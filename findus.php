@@ -4,7 +4,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- CDN per logo te shoping  -->
 
-    <title>Timberland-KS</title>
+
+    <title>Document</title>
 </head>
 <body>
     <header class="header">
@@ -12,7 +13,7 @@
         <a href="#"> <img src="images/timberland.png" width="150" height="90"></a>   
         <div class="navv">
         <nav class="navbar">
-         <a href="index.php">HOME</a>
+          <a href="index.php">HOME</a>
          <a href="products.php">PRODUCTS</a>
          <a href="aboutus.php"> ABOUT US</a>
          <a href="findus.php">FIND US</a>
@@ -26,7 +27,7 @@
             <div class="fas fa-user" id="login-btn"></div>
         </div>
     
-        <form class="search-form">
+        <form action="" class="search-form">
             <input type="search" id="search-box" placeholder="search here...">
             <label for="search-box" class="fas fa-search"></label>
         </form>
@@ -39,48 +40,43 @@
             <input type="submit" value="login now" class="btn">
         </form>
     </header>
-    
-    <section class="footer" id="contact">
+</section>
+    <section class="map">
+    <div class="tl">
+    <h1 style="font-size: 30px; text-align: center;  height: 40px; color: black;">Timberland Locations</h1>
+        </div>
 
-        <div class="container2">
-            <form action="connect.php" method="post" >
-                <h1 class="heading1"><span>Contact us</span></h1>
-              <i class="fas fa-paper-plane"></i>
-    
-              <div class="input-group">
-                <label>Full Name</label>
-                <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()" name="name">
-                <span id="name-error"></span>
-              </div>
-    
-              <div class="input-group">
-                <label>Phone No.</label>
-                <input type="tel" placeholder="123 456 789"id="contact-phone" onkeyup="validatePhone()" name="phone" >
-                <span id="phone-error"></span>
-              </div>
-    
-              <div class="input-group">
-                <label>Email Id</label>
-                <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()" name="email">
-                <span id="email-error"></span>
-              </div>   
-    
-              <div class="input-group">
-                <label>Your Message</label>
-                <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()" name="msg"></textarea>
-                <span id="message-error"></span>
-              </div>
-    
-              <button onclick="validateForm()">Submit</button>
-           <span id="submit-error"></span>
-          </form>
-    
-          </div>
-    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934
+        .585258170941!2d21.170527215407372!3d42.64895162480097!2m3!1f0!2f0!
+        3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ec0d5603ad7%3A0x1ba2ce0329d
+        66240!2sRruga%20B%2C%20Prishtina!5e0!3m2!1sen!2s!4v167664
+        9803661!5m2!1sen!2s" width="1000" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="vmap">
+        <div class="amap">
+            <h1>Prishtine</h1>
+            <h2>POST CODE :10000</h2>
+            <h2>RRUGA B</h2>
+            <h2>NR : 6</h2>
+        </div>
+       
+        <div class="amap">
+            <h1>Prishtine</h1>
+            <h2>POST CODE :10000</h2>
+            <h2>Luan Haradinaj</h2>
+            <h2>New Born</h2>
+        </div>
+        
+        <div class="amap">
+            <h1>Prishtine</h1>
+            <h2>POST CODE :10000</h2>
+            <h2>Zona e re Industriale</h2>
+            <h2>Albi Mall</h2>
+        </div>
+        </div>
     </section>
-  <footer>
+    <footer>
     <div class="col">
-      
+        <!--<img class="logo" src="img/Logo/couturely1.png" alt="">-->
         <h4>Contact</h4>
         <p><strong>Address:</strong> Rr.Agim Ramadani", Nr.11, 10000 Prishtinë</p>
         <p><strong>Phone:</strong> +38344123123 / +38349123123</p>
@@ -105,13 +101,17 @@
     </div>
     <div class="col">
         <h4>My Account</h4>
-        <a href="#">Sign In</a>
-        <a href="#">View Carts</a>
-        <a href="#">My Wishlist</a>
+        <a href="signup.html">Sign In</a>
+        <a href="cart.html">View Carts</a>
+        <a href="cart.html">My Wishlist</a>
         <a href="#">Track My Order</a>
         <a href="contact.html">Help</a>
     </div>
   </footer>
-    <script src="script.js"></script>
+
+    
+    
+
+    
 </body>
 </html>
