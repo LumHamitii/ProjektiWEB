@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,8 +33,13 @@
             <input type="search" id="search-box" placeholder="search here...">
             <label for="search-box" class="fas fa-search"></label>
     </header>
-   
-          </section>
+    <div class="card">
+                <img src="<?php echo $image; ?>" alt="<?php echo $description; ?>" style="width:100%">
+                <h1><?php echo $description; ?></h1>
+                <p class="price"><?php echo $price; ?></p>
+                <p><button>Add to Cart</button></p>
+</div>
+          <!-- </section>
     <section class="products" id="products">
         <h1 class="heading"><span>Our products</span></h1>
         <br><br><br>
@@ -230,7 +236,7 @@
                 <p><button>Add to Cart</button></p>
               </div>
         </div>
-</section>
+</section> -->
 <footer>
     <div class="col">
         <!--<img class="logo" src="img/Logo/couturely1.png" alt="">-->
