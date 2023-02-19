@@ -13,32 +13,24 @@
         <a href="#"> <img src="images/timberland.png" width="150" height="90"></a>   
         <div class="navv">
         <nav class="navbar">
-          <a href="index.html">HOME</a>
-          <a href="products.html">PRODUCTS</a>
-          <a href="pro.html">PRO</a>
-          <a href="aboutus.html"> ABOUT US</a>
-          <a href="contact.html">CONTACT</a>
+          <a href="index.php">HOME</a>
+         <a href="products.php">PRODUCTS</a>
+         <a href="aboutus.php"> ABOUT US</a>
+         <a href="findus.php">FIND US</a>
+         <a href="contact.php">CONTACT</a>
         </nav>
         </div>
         <div class="icons">
-            <div class="fas fa-bars" id="menu-btn"></div>
             <div class="fas fa-search" id="search-btn"></div>
             <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-user" id="login-btn"></div>
+            <a href="login.php">
+                <div class="fas fa-user"></div>
+            </a>
         </div>
     
-        <form action="" class="search-form">
+        <form action="" class="search-form" >
             <input type="search" id="search-box" placeholder="search here...">
             <label for="search-box" class="fas fa-search"></label>
-        </form>
-            <form action="" class="login-form">
-            <h3>login now</h3>
-            <input type="email" placeholder="Email" class="box">
-            <input type="password" placeholder="Password" class="box">
-            <p>forgot your password? <a href="#">click here</a></p>
-            <p>don't have an account? <a href="#">create now</a></p>
-            <input type="submit" value="login now" class="btn">
-        </form>
     </header>
    
           </section>
