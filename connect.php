@@ -1,21 +1,27 @@
 <?php
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$email = $_POST['email'];
-$msg = $_POST['msg'];
+class dbCon
+{
+    private $conn = '';
+    private $hostiIDB = 'localhost';
+    private $emriDB = 'form';
+    private $dbUsername = 'root';
+    private $dbPass = '';
 
-$conn = new mysqli ('localhost','root', '', 'form');
-if ($conn -> connect_error){
-    die('Connection failed :' .$conn -> connect_error);
-}
-else{
-    
-    $stmt = $conn-> prepare("insert into contact(name, phone,email, msg) values(?,?,?,?)");
-    $stmt -> bind_param("siss", $name, $phone, $email, $msg);
-    $stmt -> execute();
-    echo "Success";
-    $stmt->close();
-    $conn->close();
+    public function connDB()
+    {
+        try {
+            $this->conn = new PDO(
+                "mysql:host=$this->hostiIDB;dbname=$this->emriDB", $this->dbUsername, $this->dbPass,
+                [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC]
+            );
+        } catch (PDOException $pdoe) {
+            die("Nuk mund të lidhej me bazën e të dhënave {$this->emriDB} :" . $pdoe->getMessage());
+        }
+
+        return $this->conn;
+    }
+
+
 }
 
 ?>
