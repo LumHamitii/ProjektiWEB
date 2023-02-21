@@ -93,7 +93,7 @@ $products = $produktiCRUD->shfaqTeGjithaProduktet();
         <br><br><br>
 
         <h1 style="font-size: 30px; text-align: center; background-color: black; height: 40px; color: white;">
-            Our Products</h1>
+            Sweatshirts & Hoodies</h1>
 
         <?php
 
@@ -111,10 +111,10 @@ $products = $produktiCRUD->shfaqTeGjithaProduktet();
                         <h1></h1>
 
                         <p class="price">
-                            <?php echo $products['price'] .'$' ?>
+                            <?php echo $products['price'] ?>
                         </p>
 
-                        <p class="description">
+                        <p>
                             <?php echo $products['description'] ?>
                         </p>
 

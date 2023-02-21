@@ -62,7 +62,7 @@ if(!isset($_SESSION['admin_name'])){
 <div class="band">
    <div class="options">
    <ul>
-     <a href="shtoProdukt.php">Add product</a>
+     <a href="addProd.php">Add product</a>
      <a href="feedback.php">Feedback</a>
      <a href="logout.php" >logout</a>
 
