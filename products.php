@@ -1,12 +1,16 @@
+
 <?php
 
- 
+
 
 require_once('produktiCRUD.php');
 
- 
+
 
 $produktiCRUD = new produktiCRUD();
+
+
+$products = $produktiCRUD->shfaqTeGjithaProduktet();
 
 ?>
 
@@ -18,37 +22,40 @@ $produktiCRUD = new produktiCRUD();
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- CDN per logo te shoping  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- CDN per logo te shoping  -->
 
- 
 
-    <title>Document</title>
+
+    <title>Timberland</title>
 
 </head>
 
 <body>
 
+
     <header class="header">
 
- 
 
-        <a href="#"> <img src="images/timberland.png" width="150" height="90"></a>  
+
+        <a href="#"> <img src="images/timberland.png" width="150" height="90"></a>
 
         <div class="navv">
 
-        <nav class="navbar">
+            <nav class="navbar">
 
-          <a href="index.php">HOME</a>
+                <a href="index.php">HOME</a>
 
-         <a href="products.php">PRODUCTS</a>
+                <a href="products.php">PRODUCTS</a>
 
-         <a href="aboutus.php"> ABOUT US</a>
+                <a href="aboutus.php"> ABOUT US</a>
 
-         <a href="findus.php">FIND US</a>
+                <a href="findus.php">FIND US</a>
 
-         <a href="contact.php">CONTACT</a>
+                <a href="contact.php">CONTACT</a>
 
-        </nav>
+            </nav>
 
         </div>
 
@@ -66,9 +73,9 @@ $produktiCRUD = new produktiCRUD();
 
         </div>
 
-   
 
-        <form action="" class="search-form" >
+
+        <form action="" class="search-form">
 
             <input type="search" id="search-box" placeholder="search here...">
 
@@ -76,9 +83,8 @@ $produktiCRUD = new produktiCRUD();
 
     </header>
 
- 
 
-         
+
 
     <section class="products" id="products">
 
@@ -86,113 +92,115 @@ $produktiCRUD = new produktiCRUD();
 
         <br><br><br>
 
-        <h1 style="font-size: 30px; text-align: center; background-color: black; height: 40px; color: white;">Sweatshirts & Hoodies</h1>
+        <h1 style="font-size: 30px; text-align: center; background-color: black; height: 40px; color: white;">
+            Sweatshirts & Hoodies</h1>
 
         <?php
-
-        $products = $produktiCRUD->shfaqTeGjithaProduktet();
-
-        foreach($products as $products){
 
         ?>
+        <div class="prodi">
+            <?php
+            foreach ($products as $products) {
 
-        <div class="row1">
+                ?>
 
-            <div class="card">
+                    <div class="card">
 
-                <img src="<?php echo $products['image'] ?>"  style="width:100%">
+                        <img src="<?php echo $products['image'] ?>" style="width:100%">
 
-                <h1></h1>
+                        <h1></h1>
 
-                <p class="price"><?php echo $products['price'] ?></p>
+                        <p class="price">
+                            <?php echo $products['price'] ?>
+                        </p>
 
-                <p><?php echo $products['description'] ?></p>
+                        <p>
+                            <?php echo $products['description'] ?>
+                        </p>
 
-                <p><button>Add to Cart</button></p>
+                        <p><button>Add to Cart</button></p>
 
-              </div>
+                    </div>
 
-        <?php
+                <?php
 
             }
-
-        ?>
-
+            ?>
         </div>
 
-</section> -->
 
-<footer>
+    </section>
 
-    <div class="col">
 
-        <!--<img class="logo" src="img/Logo/couturely1.png" alt="">-->
 
-        <h4>Contact</h4>
 
-        <p><strong>Address:</strong> Rr.Agim Ramadani", Nr.11, 10000 Prishtinë</p>
+    <footer>
 
-        <p><strong>Phone:</strong> +38344123123 / +38349123123</p>
+        <div class="col">
 
-        <p><strong>Hours:</strong> 10:00-20:00 Mon-Sat</p>
+            <!--<img class="logo" src="img/Logo/couturely1.png" alt="">-->
 
-        <div class="follow">
+            <h4>Contact</h4>
 
-            <h4>Follow Us</h4>
+            <p><strong>Address:</strong> Rr.Agim Ramadani", Nr.11, 10000 Prishtinë</p>
 
-            <div class="icons">
+            <p><strong>Phone:</strong> +38344123123 / +38349123123</p>
 
-                <i class="fab fa-facebook-f"></i>
+            <p><strong>Hours:</strong> 10:00-20:00 Mon-Sat</p>
 
-                <i class="fab fa-instagram"></i>
+            <div class="follow">
 
-                <i class="fab fa-twitter"></i>
+                <h4>Follow Us</h4>
 
-                <i class="fab fa-tiktok"></i>
+                <div class="icons">
+
+                    <i class="fab fa-facebook-f"></i>
+
+                    <i class="fab fa-instagram"></i>
+
+                    <i class="fab fa-twitter"></i>
+
+                    <i class="fab fa-tiktok"></i>
+
+                </div>
 
             </div>
 
         </div>
 
-    </div>
+        <div class="col">
 
-    <div class="col">
+            <h4>About</h4>
 
-        <h4>About</h4>
+            <a href="aboutus.html">About Us</a>
 
-        <a href="aboutus.html">About Us</a>
+            <a href="#">Delivery Information</a>
 
-        <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
 
-        <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
 
-        <a href="#">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
 
-        <a href="contact.html">Contact Us</a>
+        </div>
 
-    </div>
+        <div class="col">
 
-    <div class="col">
+            <h4>My Account</h4>
 
-        <h4>My Account</h4>
+            <a href="signup.html">Sign In</a>
 
-        <a href="signup.html">Sign In</a>
+            <a href="cart.html">View Carts</a>
 
-        <a href="cart.html">View Carts</a>
+            <a href="cart.html">My Wishlist</a>
 
-        <a href="cart.html">My Wishlist</a>
+            <a href="#">Track My Order</a>
 
-        <a href="#">Track My Order</a>
+            <a href="contact.html">Help</a>
 
-        <a href="contact.html">Help</a>
+        </div>
 
-    </div>
-
-  </footer>
-
- 
-
-<script src="script.js"></script>
+    </footer>
 
 </body>
 
