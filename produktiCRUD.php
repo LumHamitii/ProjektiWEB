@@ -11,43 +11,27 @@ class produktiCRUD extends dbCon
     //id, desc, price,img i ke pas n tabel qashto edhe qeshto i kam vendos
 
     private $id;
-
     private $description;
-
     private $price;
-
     private $image;
-
     private $dbConn;
 
- 
-
-   
 
     public function __construct($id= '', $description = '', $price = '', $image = '')
 
     {
 
       //$this->id osht pjesa e private, $id osht variabla n konstruktor kjo ndrron qysh dush.
-
         $this->id = $id;
-
         $this->description = $description;
-
         $this->price = $price;
-
         $this->image = $image;
 
-       
-
         //connDB() osht emri i funksionit mrena klases dbCon
-
         $this->dbConn = $this->connDB();
-
     }
 
 //getat edhe setat per secilen veq per databazen ska nevoj
-
     public function getID()
 
     {

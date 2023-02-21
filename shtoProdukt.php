@@ -31,11 +31,8 @@ if (isset($_POST['shtoProd'])) {
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vendosja e Produkteve | Tech Store</title>
-  <link rel="shortcut icon" href="../../img/web/favicon.ico" />
-  <link rel="stylesheet" href="../../css/header.css" />
-  <link rel="stylesheet" href="../../css/forms.css" />
-  <link rel="stylesheet" href="../../css/mesazhetStyle.css" />
+  <title>Vendosja e Produkteve | Timberland</title>
+
 </head>
 
 <body>
@@ -44,7 +41,7 @@ if (isset($_POST['shtoProd'])) {
       enctype="multipart/form-data">
       <h1 class="form-title">Vendosja e Produkteve</h1>
       <input class="form-input" name="desc" type="text" placeholder="pershkrimi" required>
-      <input class="form-input" name="pdPhoto" accept="image/*" type="file" value="Foto Produktit" required>
+      <input class="form-input" name="pdPhoto" type="text" value="images/" required>
       <input class="finput" name="cmimiPd" type="text" placeholder="Qmimi i Produktit" required>
       <input class="button" type="submit" value="Shtoni Produktin" name='shtoProd'>
     </form>

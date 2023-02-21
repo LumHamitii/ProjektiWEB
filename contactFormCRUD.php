@@ -9,14 +9,16 @@ class contactFormCRUD extends dbCon
 {
     private $id;
     private $name;
+    private $phone;
     private $email;
     private $msg;
     private $dbConn;
 
-    public function __construct($id = '', $name = '', $email = '', $msg = '')
+    public function __construct($id = '', $name = '',$phone = '', $email = '', $msg = '')
     {
         $this->id = $id;
         $this->name = $name;
+        $this->phone = $phone;
         $this->email = $email;
         $this->msg = $msg;
       
@@ -31,6 +33,15 @@ class contactFormCRUD extends dbCon
     public function setName($name)
     {
         $this->name = $name;
+    }
+    public function getPhone()
+    {
+        return $this->phone;
+    }
+
+    public function setPhone($phone)
+    {
+        $this->phone = $phone;
     }
 
     public function getEmail()
@@ -66,9 +77,9 @@ class contactFormCRUD extends dbCon
     public function insertM()
     {
         try {
-            $sql = "INSERT INTO `contact`(`name`, `email`, `msg`) VALUES (?,?,?)";
+            $sql = "INSERT INTO `contact`(`name`,`phone`, `email`, `msg`) VALUES (?,?,?,?)";
             $stm = $this->dbConn->prepare($sql);
-            $stm->execute([$this->name, $this->email, $this->msg]);
+            $stm->execute([$this->name, $this->phone, $this->email, $this->msg]);
 
             $_SESSION['mesazhiMeSukses'] = true;
         } catch (Exception $e) {
