@@ -1,6 +1,3 @@
-<?php
-require_once ('connect.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,20 +19,10 @@ require_once ('connect.php');
          <a href="contact.php">CONTACT</a>
         </nav>
         </div>
-        <!-- <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <a href="login.php">
-                <div class="fas fa-user"></div>
-            </a>
-        </div>
-    
-        <form action="" class="search-form" >
-            <input type="search" id="search-box" placeholder="search here...">
-            <label for="search-box" class="fas fa-search"></label> -->
+       
     </header>
     <br><br><br>
-    <section class="footer" id="contact">
+    <section class="conform" id="contact">
 
         <div class="container2">
             <form action="connect.php" method="post" >

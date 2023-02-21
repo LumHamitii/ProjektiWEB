@@ -65,7 +65,8 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
-
+INSERT INTO `products` (`id`, `image`, `description`, `price`) VALUES
+(1, 'c.jpg', 'Timberland', '250.0', );
 --
 -- Table structure for table `user_form`
 --
