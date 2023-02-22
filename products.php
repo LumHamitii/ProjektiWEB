@@ -106,7 +106,7 @@ $products = $produktiCRUD->shfaqTeGjithaProduktet();
 
                     <div class="card">
 
-                        <img src="<?php echo $products['image'] ?>" style="width:100%">
+                        <img src="../Test/images/<?php echo $products['image'] ?>" style="width:100%">
 
                         <h1></h1>
 
