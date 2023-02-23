@@ -1,18 +1,50 @@
 <?php
 
     session_start();
-  
+    
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-</head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- CDN per logo te shoping  -->
 
+    <title>Timberland-KS</title>
+</head>
 <body>
+    <header class="header">
+
+        <a href="#"> <img src="images/timberland.png" width="150" height="90"></a>   
+        <div class="navv">
+        <nav class="navbar">
+        <a href="index.php">HOME</a>
+         <a href="products.php">PRODUCTS</a>
+         <a href="aboutus.php"> ABOUT US</a>
+         <a href="findus.php">FIND US</a>
+         <a href="contact.php">CONTACT</a>
+        </div>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <a href="cart.php">
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+</a>
+            <a href="login.php">
+                <div class="fas fa-user"></div>
+            </a>
+        </div>
     
-        <table>
+        <form action="" class="search-form" >
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        
+    </header>
+
+
+    <div class="ct">
+        <table class="tcart">
             <tr>
                 <th>ID Produktit</th>
                 <th>description</th>
@@ -37,7 +69,7 @@
                             <td>
                                 <?php echo $products["price"]; ?> €
                             </td>
-                            
+                            <td><button name="Remove" class="btn btn btn-outline-danger">REMOVE</button></td>
                         </tr>
                     </form>
                     <?php
@@ -47,5 +79,6 @@
                 ?>
 
             </table>
+            </div>
             </body>
             </html>

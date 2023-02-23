@@ -16,7 +16,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
          'description'=>$_POST['description'],
          'price'=>$_POST['price']);
          echo"<script>
-         alert ('item added');
          window.location.href='products.php';
          </script>";
         }
@@ -26,7 +25,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
                                        'description'=>$_POST['description'],
                                        'price'=>$_POST['price']);
             echo"<script>
-             alert ('item added');
              window.location.href='products.php';
              </script>";
         }
