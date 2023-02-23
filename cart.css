@@ -1,0 +1,30 @@
+.ct{
+    margin: 200px 0;
+    
+   
+}
+
+.tcart{
+    font-size: xx-large;
+    border-collapse: collapse;
+    min-width: 1000px;
+    border: 2px solid gray;
+}
+
+.tcart tr{
+    text-align: left;
+    font-weight: bold;
+    border: 2px solid gray;
+}
+.tcart th{
+    font-weight: bold;
+     background-color: grey;
+}
+.tcart td{
+    border: 2px solid gray;
+}
+
+.tcart button{
+    font-weight: bold;
+    font-size: x-large;
+}
