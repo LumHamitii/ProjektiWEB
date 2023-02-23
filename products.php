@@ -62,9 +62,9 @@ $products = $produktiCRUD->shfaqTeGjithaProduktet();
         <div class="icons">
 
             <div class="fas fa-search" id="search-btn"></div>
-
+            <a href="cart.php">
             <div class="fas fa-shopping-cart" id="cart-btn"></div>
-
+            </a>
             <a href="login.php">
 
                 <div class="fas fa-user"></div>
@@ -95,20 +95,19 @@ $products = $produktiCRUD->shfaqTeGjithaProduktet();
         <h1 style="font-size: 30px; text-align: center; background-color: black; height: 40px; color: white;">
             Sweatshirts & Hoodies</h1>
 
-        <?php
-
-        ?>
+        
         <div class="prodi">
             <?php
             foreach ($products as $products) {
 
                 ?>
-
-                    <div class="card">
-
+                  <div class="card">
+                 <form action="addcart.php" method="POST">
+                  
+                    <input type="hidden" name="id" value= <?php echo $products['id'] ?>>
+                    <input type="hidden" name="price" value= <?php echo $products['price'] ?>>
+                    <input type="hidden" name="description" value= "<?php echo $products['description'] ?>">
                         <img src="../Test/images/<?php echo $products['image'] ?>" style="width:100%">
-
-                        <h1></h1>
 
                         <p class="price">
                             <?php echo $products['price'] ?>
@@ -117,15 +116,16 @@ $products = $produktiCRUD->shfaqTeGjithaProduktet();
                         <p>
                             <?php echo $products['description'] ?>
                         </p>
-
-                        <p><button>Add to Cart</button></p>
-
+         
+                        <button type="submit" name="blej" class="button">Add to Cart</button>
+                     </form>
                     </div>
 
                 <?php
 
             }
             ?>
+            
         </div>
 
 
