@@ -107,7 +107,7 @@ $products = $produktiCRUD->shfaqTeGjithaProduktet();
                     <input type="hidden" name="id" value= <?php echo $products['id'] ?>>
                     <input type="hidden" name="price" value= <?php echo $products['price'] ?>>
                     <input type="hidden" name="description" value= "<?php echo $products['description'] ?>">
-                    <img src="<?php echo $products['image'] ?>" style="width:100%">
+                    <img src="../Test/images/<?php echo $products['image'] ?>" style="width:100%">
 
                         <p class="price">
                             <?php echo $products['price'] ?>

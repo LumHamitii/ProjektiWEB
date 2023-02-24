@@ -29,6 +29,16 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
              </script>";
         }
     }
+    if (isset($_POST['Remove'])) {
+        foreach ($_SESSION['cart'] as $key => $products) {
+            if ($_POST['id'] == $products['Id']) {
+                unset($_SESSION["cart"][$key]);
+                echo"<script>
+                window.location.href='cart.php';
+                </script>";
+            }
+        }
+    }
 }
 
 

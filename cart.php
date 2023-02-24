@@ -56,7 +56,7 @@
            
                 foreach ($_SESSION["cart"] as $keys => $products) {
                     ?>
-                    <form action="" method="post">
+                    <form action="addcart.php" method="post">
                        
                         <tr>
                         <td>
@@ -70,6 +70,7 @@
                                 <?php echo $products["price"]; ?> €
                             </td>
                             <td><button name="Remove" class="btn btn btn-outline-danger">REMOVE</button></td>
+                            <input type="hidden" name="id" value= <?php echo $products['Id'] ?>>
                         </tr>
                     </form>
                     <?php
