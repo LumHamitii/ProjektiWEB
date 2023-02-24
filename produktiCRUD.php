@@ -140,7 +140,28 @@ class produktiCRUD extends dbCon
         }
 
       }
+      public function deleteProd($id)
 
+    {
+
+        try {
+
+
+            $sql = "DELETE * FROM `products` WHERE `id`= ?";
+
+            $stm = $this->dbConn->prepare($sql);
+
+
+            $stm->execute([$id]);
+ 
+
+        } catch (Exception $e) {
+
+            return $e->getMessage();
+
+        }
+
+      }
       public function shfaqTeGjithaProduktet()
 
     {

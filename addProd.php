@@ -45,6 +45,12 @@ if (isset($_POST['shtoProd'])) {
   $produktiCRUD->addProd();
 
 }
+  if (isset($_POST['fshiProd'])) {
+
+    $produktiCRUD->deleteProd($_POST['id']);
+    $id = $_POST['id'];
+        $produktiCRUD->deleteProd($id);
+}
 
 ?>
 
@@ -89,7 +95,12 @@ if (isset($_POST['shtoProd'])) {
       <input class="button" type="submit" value="Shtoni Produktin" name='shtoProd'>
 
     </form>
+  <form action="" method="post" name="fshijProd">
+  <h1 class="form-title">Fshirja e  Produkteve</h1>
+  <input class="form-input" name="id" type="text" placeholder="id" required>
+  <input class="button" type="submit" value="Fshije produktin" name='fshiProd'>
 
+  </form>
   </div>
 
 </body>
