@@ -53,7 +53,7 @@
             </tr>
             <?php
            if (isset($_SESSION["cart"])) {
-           
+            $total=0;
                 foreach ($_SESSION["cart"] as $keys => $products) {
                     ?>
                     <form action="addcart.php" method="post">
@@ -71,27 +71,32 @@
                             </td>
                             <td><button name="Remove" class="btn btn btn-outline-danger">REMOVE</button></td>
                             <input type="hidden" name="id" value= <?php echo $products['Id'] ?>>
-                            <td>Totali: <?php 
-            $total = 0;
-            if (isset($_SESSION["cart"])) {
-
-                foreach ($_SESSION["cart"] as $keys => $products) {
-                    $total = $total + (float)$products["price"];
-
-                }
-            }
-            echo $total;
-            ?> €</td>
+                           
                         </tr>
                         
                     </form>
                     <?php
-                    
+                    $total = $total + (float)$products["price"];
                 }
+                ?>
+                </table>
+                <table>
+                <tr>
+                    <td colspan="4" >
+                        <h2>Totali i Pergjithshem:</h2>
+                    </td>
+                    <td>
+                        <h2>
+                            <?php echo number_format($total); ?> €
+                        </h2>
+                    </td>
+                    <td></td>
+                </tr>
+                <?php
             }else{ echo "error";}
                 ?>
 
-            </table>
+</table>
             </div>
             </body>
             </html>
