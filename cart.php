@@ -71,7 +71,19 @@
                             </td>
                             <td><button name="Remove" class="btn btn btn-outline-danger">REMOVE</button></td>
                             <input type="hidden" name="id" value= <?php echo $products['Id'] ?>>
+                            <td>Totali: <?php 
+            $total = 0;
+            if (isset($_SESSION["cart"])) {
+
+                foreach ($_SESSION["cart"] as $keys => $products) {
+                    $total = $total + (float)$products["price"];
+
+                }
+            }
+            echo $total;
+            ?> €</td>
                         </tr>
+                        
                     </form>
                     <?php
                     
