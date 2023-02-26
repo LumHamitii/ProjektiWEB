@@ -30,7 +30,7 @@
             <div class="fas fa-search" id="search-btn"></div>
             <a href="cart.php">
             <div class="fas fa-shopping-cart" id="cart-btn"></div>
-</a>
+             </a>
             <a href="login.php">
                 <div class="fas fa-user"></div>
             </a>
@@ -98,8 +98,6 @@
 
 </table>
             </div>
-            <form action="porosia.php">
-            <button type="submit">Blej Produktet</button>
-            </form>
+            
             </body>
             </html>

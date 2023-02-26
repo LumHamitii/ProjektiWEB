@@ -93,7 +93,7 @@ $products = $produktiCRUD->shfaqTeGjithaProduktet();
         <br><br><br>
 
         <h1 style="font-size: 30px; text-align: center; background-color: black; height: 40px; color: white;">
-            Sweatshirts & Hoodies</h1>
+            Products</h1>
 
         
         <div class="prodi">

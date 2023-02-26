@@ -2,13 +2,11 @@
 
 require_once('connect.php');
 
-//dbCon ndrron mbas emrit klases ku osht klasa e databazes
 
 class produktiCRUD extends dbCon
 
 {
 
-    //id, desc, price,img i ke pas n tabel qashto edhe qeshto i kam vendos
 
     private $id;
     private $description;
@@ -21,17 +19,14 @@ class produktiCRUD extends dbCon
 
     {
 
-      //$this->id osht pjesa e private, $id osht variabla n konstruktor kjo ndrron qysh dush.
         $this->id = $id;
         $this->description = $description;
         $this->price = $price;
         $this->image = $image;
 
-        //connDB() osht emri i funksionit mrena klases dbCon
         $this->dbConn = $this->connDB();
     }
 
-//getat edhe setat per secilen veq per databazen ska nevoj
     public function getID()
 
     {
@@ -122,13 +117,11 @@ class produktiCRUD extends dbCon
 
         try {
 
-            //kto shkruhet query i insertimit ose qfare do
 
             $sql = "INSERT INTO `products`(`image`, `description`, `price`) VALUES (?,?,?)";
 
             $stm = $this->dbConn->prepare($sql);
 
-            //qysh i kish t radhitura qaty n sql duhesh edhe kto posht te execute me i rradhit.
 
             $stm->execute([implode(",", [$this->image]), $this->description, $this->price]);
  
@@ -194,17 +187,14 @@ class produktiCRUD extends dbCon
 
         try {
 
-            //Qeshto bohet query per select krejt produktet ket rast
 
             $sql = "SELECT * FROM `products`";
 
             $stm = $this->dbConn>prepare($sql);
 
-            //tash skemi nevoj me shkrujt kurgjo n execute se sna vyn asnji parameter n query.
 
             $stm->execute();
 
-              //Qeki sherben me ti kthy t dhanat e tabelave
 
             return $stm->fetchAll();
 
@@ -224,17 +214,14 @@ class produktiCRUD extends dbCon
 
         try {
 
-            //Qeshto bohet query me i kerku produktet mbas ids
 
             $sql = "SELECT * FROM `products` where id = ?";
 
             $stm = $this->dbConn>prepare($sql);
 
-            //kto na vyn me e morr id-n pershkak se jemi tu kerku mbas id-s n where
 
             $stm->execute([$this->id]);
 
-              //e bojm veq fetch ndrysh prej nalt se fetch e kthen veq ni rresht masi jem tu e kerku mbas ids veq 1 ka me kthy, e fetchAll i kthen krejt rreshtat
 
             return $stm->fetch();
 

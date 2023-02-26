@@ -2,13 +2,11 @@
 
  
 
-//Kto duhesh me e bo require ose include fajllin ku e ki crudin
 
 require_once('contactFormCRUD.php');
 
  
 
-//emri variables nuk ka randsi, a knej ku e krijon instancen duhet me kon e njejt si emri i klases qe e ke kriju te crudi
 
 $contactFormCRUD = new contactFormCRUD();
 
@@ -23,11 +21,9 @@ if (!isset($_SESSION)) {
 
  
 
-//if e kontrollon shtoPros a osht bo POST, shtoProd osht emri i butonit posht ku shkrun name='shtoProd' qekjo osht pjesa ma e rendsishme te inputat se qaty i merr t dhanat
 
 if (isset($_POST['submit'])) {
 
-  //kto i kemi morr t dhanat prej formes qe e kemi degu pra i kena bi setat per secilen qe duhet me
 
   $contactFormCRUD->setName($_POST['cName']);
 
@@ -40,7 +36,6 @@ if (isset($_POST['submit'])) {
 
  
 
- //kto e thirrim funksionin qe e kena psh rastin ton e ki addProd per me shtu produkte
 
   $contactFormCRUD->insertM();
 

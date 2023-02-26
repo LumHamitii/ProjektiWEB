@@ -2,19 +2,16 @@
 
  
 
-//Kto duhesh me e bo require ose include fajllin ku e ki crudin
 
 require_once('produktiCRUD.php');
 
  
 
-//emri variables nuk ka randsi, a knej ku e krijon instancen duhet me kon e njejt si emri i klases qe e ke kriju te crudi
 
 $produktiCRUD = new produktiCRUD();
 
  
 
-//kjo vyn nqofse ki pun me sesuone
 
 if (!isset($_SESSION)) {
 
@@ -24,23 +21,19 @@ if (!isset($_SESSION)) {
 
  
 
-//if e kontrollon shtoPros a osht bo POST, shtoProd osht emri i butonit posht ku shkrun name='shtoProd' qekjo osht pjesa ma e rendsishme te inputat se qaty i merr t dhanat
 
 if (isset($_POST['shtoProd'])) {
 
-  //kto i kemi morr t dhanat prej formes qe e kemi degu pra i kena bi setat per secilen qe duhet me
 
   $produktiCRUD->setDescription($_POST['desc']);
 
   $produktiCRUD->setPrice($_POST['cmimiPd']);
 
-  //Pershkak qe e kemi foto duhet me e bo file se dergohet si file jo tekst mandej kto e merr veq emrin
 
   $produktiCRUD->setImage($_POST['pdPhoto']);
 
  
 
- //kto e thirrim funksionin qe e kena psh rastin ton e ki addProd per me shtu produkte
 
   $produktiCRUD->addProd();
 

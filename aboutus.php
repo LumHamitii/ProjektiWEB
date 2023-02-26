@@ -21,7 +21,9 @@
         </div>
         <div class="icons">
             <div class="fas fa-search" id="search-btn"></div>
+            <a href="cart.php">
             <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            </a>
             <a href="login.php">
                 <div class="fas fa-user"></div>
             </a>
