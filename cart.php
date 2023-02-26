@@ -98,5 +98,8 @@
 
 </table>
             </div>
+            <form action="porosia.php">
+            <button type="submit">Blej Produktet</button>
+            </form>
             </body>
             </html>
